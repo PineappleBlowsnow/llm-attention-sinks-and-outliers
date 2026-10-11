@@ -1,4 +1,6 @@
-# Attention Sinks and Activation Outliers in Language Models
+# Explaining Attention Sinks and Activation Outliers in LLMs
+
+**MVA course — Explainable AI**
 
 A collaborative MVA Explainable AI course project by **Tristan MARTIN and Ying JIN**. This fork preserves [the original repository](https://github.com/Tristan22400/xai-outlier-repro) and its MIT license.
 
@@ -6,7 +8,7 @@ Start with the [joint course report](report.pdf) and [portfolio guide](docs/PORT
 
 ## Ying Jin's contribution: cross-model diagnostics and input ablations
 
-Ying implemented the [Figure 1 visualization pipeline](src/xai_repro/analysis/visualize_figure1.py) and [input-ablation experiments](src/xai_repro/analysis/input_ablation.py), recorded in [commit 4327383](https://github.com/PineappleBlowsnow/xai-outlier-repro/commit/4327383cacfd888c8892e8bdcced3624fa63fe56). The visualization examines attention and hidden activations across Pythia, GPT-2 and Llama model families; token-replacement and context-length ablations probe how attention concentration changes with the input.
+Ying implemented the [Figure 1 visualization pipeline](src/xai_repro/analysis/visualize_figure1.py) and [input-ablation experiments](src/xai_repro/analysis/input_ablation.py), recorded in [commit 4327383](https://github.com/PineappleBlowsnow/llm-attention-sinks-and-outliers/commit/4327383cacfd888c8892e8bdcced3624fa63fe56). The visualization examines attention and hidden activations across Pythia, GPT-2 and Llama model families; token-replacement and context-length ablations probe how attention concentration changes with the input.
 
 The [saved visualization](analysis_results_v2/figure1_replication.png) and [ablation JSON](analysis_results_v2/ablation_results.json) are historical outputs. The JSON contains GPT-2 and Pythia runs; configured support for another model is not evidence that every experiment ran on it. The [portfolio guide](docs/PORTFOLIO.md) explains the metrics, runnable entry points and contribution boundary. Training infrastructure and the intervention study remain part of the joint project.
 
@@ -123,3 +125,6 @@ python -m xai_repro.analysis.ptq_int8  --checkpoint runs/<variant>/final --confi
 ## License
 
 MIT — see [`LICENSE`](LICENSE).
+
+
+[Back to the MVA project portfolio](https://github.com/PineappleBlowsnow/mva-portfolio)
