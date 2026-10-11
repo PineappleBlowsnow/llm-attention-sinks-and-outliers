@@ -127,4 +127,4 @@ python -m xai_repro.analysis.ptq_int8  --checkpoint runs/<variant>/final --confi
 MIT — see [`LICENSE`](LICENSE).
 
 
-[Back to the MVA project portfolio](https://github.com/PineappleBlowsnow/mva-portfolio)
+[Back to Ying Jin's project directory](https://github.com/PineappleBlowsnow#mva-projects)
